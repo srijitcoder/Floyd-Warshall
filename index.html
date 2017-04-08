@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Floyd</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Floyd">
+  <meta property="og:title" content="Floyd" />
+  <meta property="og:description" content="Floyd" />
+  <link rel="icon" href="icon.png"> 
+  
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body>
+
+<div class="down">
+  <div class="p" style="background: #0d5851;"></div>
+  <div class="p" style="background: #0d174c;"></div>
+  <div class="p" style="background: #791710;"></div>
+  <div class="p" style="background: #FF5722;"></div>
+  <div class="p" style="background: #21113c;"></div>
+</div>
+
+<button id="floyd">RUN FLOYD FUNCTION</button>
+
+<div class="main-div" style="background: #0d5851;" id="vert">
+  <main>
+    <div class="cent">
+        <h1>Select no. of vertex and edges (No. of location)</h1><br><br>
+        <select id="put_vert">
+          <option>No. of vertex.</option>
+        </select><br><br>
+        <select id="put_edge">
+          <option>No. of edge.</option>
+        </select><br><br>
+        <button id="get_vert">SUBMIT</button>
+    </div>
+  </main>
+</div>
+
+<div class="main-div animated slideInLeft" style="background: #0d174c;display:none;overflow-y: scroll;overflow-x: hidden;" id="loca">
+  <main>
+    <div class="cent">
+        <h1>Select locations</h1><br><br>
+        <div class="location">
+          <button id="get_location" style="color:#0d174c;">SUBMIT</button>
+        </div>
+    </div>
+  </main>
+</div>
+
+<div class="main-div animated slideInLeft" style="background: #791710;display: none;" id="edges">
+  <main>
+    <div class="cent">
+      <div class="edges">
+          <button id="get_edge" style="color:#791710;">SUBMIT</button>
+        </div>
+    </div>
+  </main>
+</div>
+
+<div class="main-div animated slideInLeft" style="background: #FF5722;display: none;" id="check_edge">
+  <main>
+    <div class="cent tablemat">
+          <button id="check_map" style="color:#FF5722;">CHECK MAP</button>
+    </div>
+  </main>
+</div>
+
+<div class="main-div animated slideInLeft" style="background: #21113c;display: none;" id="floyd_div">
+  <main>
+    <div class="cent">
+          <h1>OLD MATRIX</h1><br>
+          <div class="table_old"></div><br>
+          <h1>FLOYD MATRIX</h1><br>
+          <div class="table_new"></div>
+    </div>
+  </main>
+</div>
+
+
+<div id="dvMap">
+
+</div>
+  
+
+<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry,places&ext=.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!-- <script type="text/javascript" src="js/xd.js"></script> -->
+
+</body>
+</html>
