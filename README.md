@@ -1,4 +1,4 @@
-# Floyd-Warshall
+# Floyd Warshall
 Integrating Google Map api with Floyd Warshall
 
 ## Setup
